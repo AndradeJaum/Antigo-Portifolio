@@ -1,0 +1,35 @@
+.header {
+    height: 6vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+}
+
+.button-menu {
+    width: 140px;
+    height: 4vh;
+    font-size: 1rem;
+    color: #fafafa;
+    background: none;
+    border: 1px solid #fafafa;
+    border-right: none;
+    cursor: pointer;
+    transition: ease-in-out 0.27s;
+}
+
+.button-menu:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.button-menu:first-child:hover {
+    border-radius: 5px 0 5px 5px;
+}
+
+.button-menu:hover {
+    height: 5vh;
+    color: #08FDD8;
+    border: 1px solid #08FDD8;
+    border-radius: 0 0 5px 5px;
+}

@@ -1,0 +1,38 @@
+.home {
+    height: 89vh;
+}
+
+.home-box {
+    padding: 17% 5%;
+}
+
+.title {
+    font-size: 6rem;
+}
+
+.sub-title {
+    font-size: 4rem;
+}
+
+.text {
+    line-height: 5.5rem;
+}
+
+.footer-box {
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer {
+    margin-right: 2% ;
+    display: flex;
+}
+
+.language {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: auto;
+    padding: 0 15px;
+}
