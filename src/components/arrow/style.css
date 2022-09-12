@@ -1,0 +1,24 @@
+.box-arrow {
+    position: fixed;
+    left: 95%;
+    top: 90%;
+    text-align: center;
+    display: flex;
+    animation: is-bouncing 1s ease-in-out alternate infinite;
+    transform: rotate(90deg);
+    color: #08FDD8;
+}
+
+.scroll {
+    transform: rotate(180deg);
+    font-size: 1.1rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    color: #08FDD8;
+}
+
+@keyframes is-bouncing {
+    to {
+        transform: translateY(30px) rotate(90deg);
+    }
+}

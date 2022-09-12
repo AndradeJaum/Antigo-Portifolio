@@ -1,20 +1,20 @@
-.about {
+.skills {
     height: 100vh;
-    background-color: burlywood;
+    background-color: blueviolet;
     display: flex;
     justify-content: space-around;
 }
 
-.about-box {
+.skills-box {
     padding: 10% 5%;
     width: 40%;
 }
 
-.about-title {
+.skills-title {
     font-size: 6rem;
 }
 
-.about-image {
+.skills-image {
     padding: 10% 5%;
     width: 40%;
 }

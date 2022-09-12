@@ -1,38 +1,25 @@
 .home {
-    height: 89vh;
+    height: 100vh;
+    position: relative;
 }
 
 .home-box {
-    padding: 17% 5%;
+    position: relative;
+    width: 70%;
+    top: 25%;
+    left: 15%;
 }
 
-.title {
-    font-size: 6rem;
-}
-
-.sub-title {
-    font-size: 4rem;
-}
-
-.text {
+.tittle-animation-loop {
+    font-size: 5.5rem;
     line-height: 5.5rem;
+    font-weight: 700;
 }
 
-.footer-box {
-    height: 5vh;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.footer {
-    margin-right: 2% ;
-    display: flex;
-}
-
-.language {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: auto;
-    padding: 0 15px;
+.home-button {
+    position: inherit;
+    top: 33%;
+    left: 20%;
+    width: 15%;
+    padding: 20px;
 }

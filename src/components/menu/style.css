@@ -1,35 +1,50 @@
-.header {
-    height: 6vh;
-}
 
-.menu {
+.header {
     display: flex;
-    justify-content: end;
+    height: 6vh;
+    justify-content: space-between;
+}
+.menu {
+    margin: auto 1rem;
 }
 
 .button-menu {
-    width: 140px;
-    height: 4vh;
-    font-size: 1rem;
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin: 0 1rem;
+    font-size: 1.2rem;
     color: #fafafa;
     background: none;
-    border: 1px solid #fafafa;
-    border-right: none;
+    border: none;
     cursor: pointer;
-    transition: ease-in-out 0.27s;
 }
 
-.button-menu:first-child {
-    border-radius: 5px 0 0 5px;
-}
-
-.button-menu:first-child:hover {
-    border-radius: 5px 0 5px 5px;
+.button-menu::after {
+    content: "";
+    position: absolute;
+    background-color: #08FDD8;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
 }
 
 .button-menu:hover {
-    height: 5vh;
+    transition: 0.3s;
     color: #08FDD8;
-    border: 1px solid #08FDD8;
-    border-radius: 0 0 5px 5px;
+}
+
+.button-menu:hover::after {
+    width: 100%;
+}
+
+.menu-language {
+    margin: auto 1rem;
+}
+
+.language {
+    font-size: 1.2rem;
+    margin: 0 1rem;
 }
