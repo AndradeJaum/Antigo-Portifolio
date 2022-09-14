@@ -1,8 +1,5 @@
 import "./style.css"
 import TypewriterComponent from "typewriter-effect";
-import { cursorTo } from "readline";
-
-
 
 function Home() {
     return (
@@ -15,7 +12,7 @@ function Home() {
                                 deleteSpeed: 30,
                                 delay: 120,
                                 autoStart: true,
-                                cursor: ":)"
+                                cursor: ""
                             }}
                             onInit={(typewriter) => {
                                 typewriter
@@ -30,7 +27,7 @@ function Home() {
                                 deleteSpeed: 30,
                                 delay: 120,
                                 autoStart: true,
-                                loop: true
+                                loop: true,
                             }}
                             onInit={(typewriter) => {
                                 typewriter
@@ -51,9 +48,16 @@ function Home() {
                         />
                     </h1>
                 </div>
-                <button className="home-button">
-                    Say Hello
-                </button>
+                <div className="box-button">
+                    <p className="slogan">Let’s make something special.</p>
+                    <a href="#" className="flat-button">
+                        <div className="flat-button-div">
+                            <span className="fill"></span>
+                            <span className="base"></span>
+                            <span className="text">Say Hello</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </>
     )

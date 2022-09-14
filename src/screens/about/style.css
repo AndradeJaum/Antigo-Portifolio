@@ -1,20 +1,51 @@
 .about {
     height: 100vh;
-    background-color: burlywood;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.about-box {
-    padding: 10% 5%;
-    width: 40%;
+.about .about-box {
+    position: relative;
+    top: 13%;
+    left: 15%;
+    width: 35%;
+    height: 80%;
+    border: 1px solid #08FDD8;
 }
 
-.about-title {
-    font-size: 6rem;
+.about .about-box .about-box-header {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 10%;
 }
 
-.about-image {
-    padding: 10% 5%;
-    width: 40%;
+.about .about-box .about-box-header .about-tittle {
+    font-size: 2.5rem;
+    margin: auto 2rem auto 2rem;
+}
+
+.about .about-box .about-box-header .about-line {
+    background-color: #fafafa;
+    margin: auto 2rem auto 0;
+    width: 100%;
+    height: 1px;
+}
+
+.about .about-box .about-text {
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+.about .about-image {
+    position: relative;
+    top: 13%;
+    right: 15%;
+    width: 34%;
+    height: 80%;
+    border: 1px solid #08FDD8;
+}
+
+.about .about-image .about-tittle {
+    margin: auto;
 }

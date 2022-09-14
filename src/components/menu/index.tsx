@@ -1,19 +1,26 @@
 import "./style.css"
 
 function Menu() {
+
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header?.classList.toggle("sticky", window.scrollY > 0);
+    })
+
     return (
         <>
-            <div className="header">
-                    <div className="menu-language">
-                        <p className="language">Language</p>
-                    </div>
-                    <nav className="menu">
-                        <button className="button-menu">About</button>
-                        <button className="button-menu">Skills</button>
-                        <button className="button-menu">Work</button>
-                        <button className="button-menu">Contact</button>
-                    </nav>
+            <header className="header">
+                <div className="menu-language">
+                    <a className="language">Language</a>
                 </div>
+                <ul className="list">
+                    <li className="item"><a className="button-menu">Home</a></li>
+                    <li className="item"><a className="button-menu">About</a></li>
+                    <li className="item"><a className="button-menu">Skills</a></li>
+                    <li className="item"><a className="button-menu">Work</a></li>
+                    <li className="item"><a className="button-menu">Contact</a></li>
+                </ul>
+            </header>
         </>
     )
 }
