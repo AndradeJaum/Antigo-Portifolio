@@ -31,7 +31,7 @@ function Home() {
                             }}
                             onInit={(typewriter) => {
                                 typewriter
-                                    .pauseFor(3500)
+                                    .pauseFor(3700)
                                     .typeString(" Full Stack Developer")
                                     .pauseFor(3500)
                                     .deleteChars(20)

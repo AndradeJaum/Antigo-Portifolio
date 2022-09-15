@@ -1,16 +1,48 @@
 .skills {
+    position: relative;
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: blueviolet ;
 }
 
-.skills-box {
-    padding: 10% 5%;
+.skills .skills-box {
+    position: relative;
     width: 40%;
+    height: 50%;
+    padding: 20px 0;
+    top: 13%;
+    left: 10%;
+    border-radius: 10px;
+    border: 1px solid #08FDD8;
 }
 
-.skills-title {
-    font-size: 6rem;
+.skills .skills-box .skills-box-header {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    justify-content: center;
+}
+
+.skills .skills-box .skills-box-header .skills-tittle {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: auto;
+    white-space: nowrap;
+}
+
+.skills .skills-box .skills-box-header .skills-line {
+    background-color: #fafafa;
+    margin: auto 2rem auto 2rem;
+    width: 100%;
+    height: 1px;
+}
+
+.skills .skills-box .skills-text {
+    margin: 0 2rem 1rem 2rem;
+    letter-spacing: 2px;
 }
 
 .skills-image {
