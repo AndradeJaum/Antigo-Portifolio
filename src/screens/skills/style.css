@@ -1,9 +1,25 @@
 .skills {
-    position: relative;
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+    background-size: 300% 300%;
     height: 100vh;
+    position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: blueviolet ;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .skills .skills-box {
@@ -14,7 +30,12 @@
     top: 13%;
     left: 10%;
     border-radius: 10px;
-    border: 1px solid #08FDD8;
+        /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px #08fdd8ad;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid #08FDD8;
 }
 
 .skills .skills-box .skills-box-header {
@@ -28,7 +49,6 @@
 
 .skills .skills-box .skills-box-header .skills-tittle {
     font-size: 2rem;
-    letter-spacing: 2px;
     margin: auto;
     white-space: nowrap;
 }
@@ -41,11 +61,54 @@
 }
 
 .skills .skills-box .skills-text {
-    margin: 0 2rem 1rem 2rem;
-    letter-spacing: 2px;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
-.skills-image {
-    padding: 10% 5%;
+.skills-tech {
+    display: flex;
+    position: relative;
+    width: 35%;
+    height: 50%;
+    padding: 20px 0;
+    top: 13%;
+    right: 10%;
+    border-radius: 10px;
+    border: 1px solid #08FDD8;
+    flex-wrap: wrap;
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px #08fdd8ad;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid #08FDD8;
+}
+
+.skills-tech .skills-tech-header {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    justify-content: center;
+}
+
+.skills-tech .skills-tech-header .skills-subtittle{
+    width: 100%;
+}
+
+.skills-tech .skills-list{
+    width: 100%;
+    height: 100%;
+}
+
+.skills-tech .skills-list .skills-itens {
     width: 40%;
+    flex-wrap: wrap;
+    margin: 1rem 2rem 0 2rem;
+}
+
+.skills-tech .skills-list .skills-itens .techs {
+    
 }
