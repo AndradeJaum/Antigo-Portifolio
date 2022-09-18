@@ -17,17 +17,27 @@ function Skiils() {
 
                 <div className="skills-tech">
                     <div className="skills-tech-header">
+                        <div className="skills-line"></div>
                         <h3 className="skills-subtittle">Technologies I study</h3>
+                        <div className="skills-line"></div>
                     </div>
-                    <ul className="skills-list">
-                        <li className="skills-itens"><a className="techs">Javascript (ES6+)</a></li>
-                        <li className="skills-itens"><a className="techs">React.js</a></li>
-                        <li className="skills-itens"><a className="techs">Typescript</a></li>
-                        <li className="skills-itens"><a className="techs">WordPress</a></li>
-                        <li className="skills-itens"><a className="techs">Mongo</a></li>
-                        <li className="skills-itens"><a className="techs">AWS</a></li>
-                        <li className="skills-itens"><a className="techs">Node.js</a></li>
-                    </ul>
+                    <div className="skills-list">
+                        <ul className="list">
+                            <li className="skills-itens"><a className="techs">Javascript (ES6+)</a></li>
+                            <li className="skills-itens"><a className="techs">React.js</a></li>
+                            <li className="skills-itens"><a className="techs">Typescript</a></li>
+                            <li className="skills-itens"><a className="techs">HTML5</a></li>
+                            <li className="skills-itens"><a className="techs">CSS3</a></li>
+                            <li className="skills-itens"><a className="techs">WordPress</a></li>
+                        </ul>
+                        <ul className="list">
+                            <li className="skills-itens"><a className="techs">Express.js</a></li>
+                            <li className="skills-itens"><a className="techs">Material-UI</a></li>
+                            <li className="skills-itens"><a className="techs">Mongo DB</a></li>
+                            <li className="skills-itens"><a className="techs">AWS</a></li>
+                            <li className="skills-itens"><a className="techs">Node.js</a></li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
