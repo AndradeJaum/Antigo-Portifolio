@@ -1,7 +1,7 @@
 import "./style.css"
 import TypewriterComponent from "typewriter-effect";
 
-function Home() {
+function Apresentation() {
     return (
         <>
             <div className="home">
@@ -63,4 +63,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default Apresentation;

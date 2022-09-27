@@ -1,0 +1,150 @@
+.contact {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.contact .contact-box {
+    width: 40%;
+    height: 55%;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    background-color: #1D1D1D;
+    border: 2px solid #08FDD8;
+    border-radius: 10px;
+}
+
+.contact .contact-box .contact-box-header {
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+
+.contact .contact-box .contact-box-header .contact-line {
+    background-color: #fafafa;
+    margin: auto 2rem auto 2rem;
+    width: 100%;
+    height: 1px;
+}
+
+.contact .contact-box .contact-box-header .contact-tittle {
+    font-size: 2rem;
+    margin: auto;
+}
+
+.contact .contact-box .form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.contact .contact-box .form .textField {
+    width: 45%;
+    margin: 1rem 0 1rem 0;
+    padding: 15px;
+    background: none;
+    border: 1px solid #fafafa;
+    color: #fafafa;
+}
+
+.contact .contact-box .form .message {
+    width: 95%;
+    height: 150px;
+    padding: 15px;
+    background: none;
+    border: 1px solid #fafafa;
+    color: #fafafa;
+}
+
+.contact .contact-box .form .message {
+    margin: 1rem 0 1rem 0;
+}
+
+.contact .contact-box .form .box-button {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.contact .contact-box .form .box-button .flat-button {
+    color: #08FDD8;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    max-width: 300PX;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+}
+
+.contact .contact-box .form .box-button .flat-button .flat-button-div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact .contact-box .form .box-button .flat-button .flat-button-div .fill {
+    background: #08FDD8;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: -5%;
+    transition: .3s ease-in-out all;
+    transform: skewX(-10deg);
+}
+.contact .contact-box .form .box-button .flat-button .flat-button-div:hover .fill {
+    width: 110%;
+}
+
+.contact .contact-box .form .box-button .flat-button .flat-button-div .base {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #08FDD8;
+}
+
+.contact .contact-box .form .box-button .flat-button .flat-button-div .text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.contact .contact-box .form .box-button .flat-button .flat-button-div .text:hover {
+    color: #fafafa;
+}
+
+
+.contact .contact-map {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background-color: burlywood;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+

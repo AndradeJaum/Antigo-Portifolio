@@ -5,13 +5,7 @@ import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
 import { ISourceOptions } from "tsparticles-engine";
 import './App.css';
-import Menu from "./components/menu";
-import Home from "./screens/home/index";
-import About from "./screens/about/index";
-import Skiils from "./screens/skills";
-import Contact from "./screens/contact";
-import Arrow from "./components/arrow";
-import Social from "./components/social";
+import Home from "./pages/home";
 
 function App() {
     const particlesInit = useCallback(async (engine: Engine) => {
@@ -21,14 +15,8 @@ function App() {
     return (
         <>
             <div className="App">
-                <Menu />
                 <Home />
-                <About />
-                <Skiils />
-                <Contact />
                 <Particles options={particlesOptions as ISourceOptions} init={particlesInit} />
-                <Arrow />
-                <Social />
             </div>
         </>
     );

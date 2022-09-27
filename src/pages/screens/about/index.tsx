@@ -20,7 +20,6 @@ function About() {
 
                 </div>
                 <div className="about-image">
-                    {/* <img src={img} className="image" ></img> */}
                 </div>
             </div>
         </>
