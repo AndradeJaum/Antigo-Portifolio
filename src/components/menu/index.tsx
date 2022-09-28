@@ -1,7 +1,10 @@
 import "./style.css"
+import * as Scroll from 'react-scroll';
+let Link = Scroll.Link
+let Element = Scroll.Element;
 
-const Menu = ({ menuScroll }: { menuScroll : () => void }) => {
 
+function Menu() {
 
     window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
@@ -14,22 +17,33 @@ const Menu = ({ menuScroll }: { menuScroll : () => void }) => {
                 <div className="menu-language">
                     <a className="language">Language</a>
                 </div>
-                <ul className="list" onClick={menuScroll}>
-                    <li className="item">
-                        <a className="button-menu" >Home</a>
-                    </li>
-                    <li className="item">
-                        <a className="button-menu" >About</a>
-                    </li>
-                    <li className="item">
-                        <a className="button-menu" >Skills</a>
-                    </li>
-                    <li className="item">
-                        <a className="button-menu" >Work</a>
-                    </li>
-                    <li className="item">
-                        <a className="button-menu" >Contact</a>
-                    </li>
+                <ul className="list" >
+
+                    <Link className="anchors" to="home" spy={true} smooth={true} duration={500}>
+                        <li className="item">
+                            <a className="button-menu" >Home</a>
+                        </li>
+                    </Link>
+                    <Link className="anchors" to="about" spy={true} smooth={true} duration={500}>
+                        <li className="item">
+                            <a className="button-menu" >About</a>
+                        </li>
+                    </Link>
+                    <Link className="anchors" to="skills" spy={true} smooth={true} duration={500}>
+                        <li className="item">
+                            <a className="button-menu" >Skills</a>
+                        </li>
+                    </Link>
+                    <Link className="anchors" to="work" spy={true} smooth={true} duration={500}>
+                        <li className="item">
+                            <a className="button-menu" >Work</a>
+                        </li>
+                    </Link>
+                    <Link className="anchors" to="contact" spy={true} smooth={true} duration={500}>
+                        <li className="item">
+                            <a className="button-menu" >Contact</a>
+                        </li>
+                    </Link>
                 </ul>
             </header>
         </>

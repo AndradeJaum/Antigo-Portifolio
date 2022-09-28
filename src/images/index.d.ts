@@ -7,3 +7,8 @@ declare module '*.svg' {
     const value: any;
     export = value;
   }
+
+  declare module 'react-scroll' {
+    const value: any;
+    export = value
+  }

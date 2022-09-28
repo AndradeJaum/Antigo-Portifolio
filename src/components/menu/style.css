@@ -72,3 +72,6 @@
 .header.sticky .list .item .button-menu {
     color: black;
 }
+.header.sticky .list .item .button-menu:hover {
+    color: #08FDD8;
+}
