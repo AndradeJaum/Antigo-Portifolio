@@ -6,14 +6,15 @@ import Skiils from "../screens/skills";
 import Contact from "../screens/contact";
 import Arrow from "../../components/arrow";
 import Social from "../../components/social";
+import Work from "../screens/work";
 
 function Home() {
 
 
     return (
         <>
-            <Apresentation />
             <Menu />
+            <Apresentation />
             <div id="about" >
                 <About />
             </div>
@@ -21,7 +22,7 @@ function Home() {
                 <Skiils />
             </div>
             <div >
-
+                <Work />
             </div>
             <div id="contact">
                 <Contact />

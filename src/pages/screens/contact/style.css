@@ -5,7 +5,7 @@
     height: 100vh;
 }
 
-.contact .contact-box {
+.contact-box {
     width: 40%;
     height: 55%;
     position: relative;
@@ -16,25 +16,25 @@
     border-radius: 10px;
 }
 
-.contact .contact-box .contact-box-header {
+.contact-box-header {
     display: flex;
     width: 100%;
-    height: 10%;
+    height: 14%;
 }
 
-.contact .contact-box .contact-box-header .contact-line {
+.contact-line {
     background-color: #fafafa;
     margin: auto 2rem auto 2rem;
     width: 100%;
     height: 1px;
 }
 
-.contact .contact-box .contact-box-header .contact-tittle {
+.contact-tittle {
     font-size: 2rem;
     margin: auto;
 }
 
-.contact .contact-box .form {
+.form {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@
     margin: auto;
 }
 
-.contact .contact-box .form .textField {
+.textField {
     width: 45%;
     margin: 1rem 0 1rem 0;
     padding: 15px;
@@ -51,7 +51,7 @@
     color: #fafafa;
 }
 
-.contact .contact-box .form .message {
+.message {
     width: 95%;
     height: 150px;
     padding: 15px;
@@ -60,11 +60,11 @@
     color: #fafafa;
 }
 
-.contact .contact-box .form .message {
+.message {
     margin: 1rem 0 1rem 0;
 }
 
-.contact .contact-box .form .box-button {
+.box-button-contact {
     position: relative;
     left: 0%;
     width: 100%;
@@ -74,7 +74,7 @@
     place-items: center;
 }
 
-.contact .contact-box .form .box-button .flat-button {
+.flat-button-contact {
     color: #08FDD8;
     font-size: 1.2rem;
     letter-spacing: 4px;
@@ -92,14 +92,14 @@
     border: none;
 }
 
-.contact .contact-box .form .box-button .flat-button .flat-button-div {
+.flat-button-div-contact {
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.contact .contact-box .form .box-button .flat-button .flat-button-div .fill {
+.fill-contact {
     background: #08FDD8;
     width: 0;
     height: 100%;
@@ -108,11 +108,12 @@
     transition: .3s ease-in-out all;
     transform: skewX(-10deg);
 }
-.contact .contact-box .form .box-button .flat-button .flat-button-div:hover .fill {
+
+.flat-button-div-contact:hover .fill-contact {
     width: 110%;
 }
 
-.contact .contact-box .form .box-button .flat-button .flat-button-div .base {
+.base-contact {
     box-sizing: border-box;
     position: absolute;
     left: 0;
@@ -121,7 +122,7 @@
     border: 2px solid #08FDD8;
 }
 
-.contact .contact-box .form .box-button .flat-button .flat-button-div .text {
+.text-contact {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -130,12 +131,12 @@
     top: 0;
 }
 
-.contact .contact-box .form .box-button .flat-button .flat-button-div .text:hover {
+.text-contact:hover {
     color: #fafafa;
 }
 
 
-.contact .contact-map {
+.contact-map {
     display: flex;
     position: relative;
     top: 0;

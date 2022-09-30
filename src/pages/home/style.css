@@ -1,1 +1,76 @@
 
+.box-button {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.slogan {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.flat-button {
+    color: #08FDD8;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.flat-button div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.flat-button span.fill {
+    background: #08FDD8;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: -5%;
+    transition: .3s ease-in-out all;
+    transform: skewX(-10deg);
+}
+
+.flat-button:hover span.fill {
+    width: 110%;
+}
+
+.base {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #08FDD8;
+}
+
+.flat-button span.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.flat-button span.text:hover {
+    color: #fafafa;
+}

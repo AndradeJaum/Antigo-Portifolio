@@ -5,7 +5,7 @@
     justify-content: space-between;
 }
 
-.skills .skills-box {
+.skills-box {
     position: relative;
     width: 40%;
     height: 50%;
@@ -17,7 +17,7 @@
     background-color: #1d1d1d;
 }
 
-.skills .skills-box .skills-box-header {
+.skills-box-header {
     display: flex;
     position: relative;
     top: 0;
@@ -26,24 +26,24 @@
     justify-content: center;
 }
 
-.skills .skills-box .skills-box-header .skills-tittle {
+.skills-tittle {
     font-size: 2rem;
     margin: auto;
     white-space: nowrap;
 }
 
-.skills .skills-box .skills-box-header .skills-line {
+.skills-line {
     background-color: #fafafa;
     margin: auto 2rem auto 2rem;
     width: 100%;
     height: 1px;
 }
 
-.skills .skills-box .skills-text {
+.skills-text {
     margin: 1rem 2rem 1rem 2rem;
 }
 
-.skills .skills-tech {
+.skills-tech {
     display: flex;
     position: relative;
     padding: 20px 0;
@@ -57,40 +57,40 @@
     background-color: #1d1d1d;
 }
 
-.skills .skills-tech .skills-tech-header {
+.skills-tech-header {
     display: flex;
     width: 100%;
-    height: 10%;
+    height: 12%;
 }
 
-.skills .skills-tech .skills-tech-header .skills-line{
+.skills-line{
     background-color: #fafafa;
     margin: auto 2rem auto 2rem;
     width: 100%;
     height: 1px;
 }
 
-.skills .skills-tech .skills-tech-header .skills-subtittle{
+.skills-subtittle{
     white-space: nowrap;
     margin: auto;
 }
 
-.skills .skills-tech .skills-list{
-    display: flex;
-    justify-content: space-around;
+.skills-list{
+    /* display: flex;
+    justify-content: space-around; */
     width: 100%;
 }
 
-.skills .skills-tech .skills-list .list{
+.list{
     width: 35%;
     white-space: nowrap;
 }
 
-.skills .skills-tech .skills-list .skills-itens {
+.skills-itens {
     width: 40%;
     margin: 1rem 2rem 0 2rem;
 }
 
-.skills .skills-tech .skills-list .skills-itens .techs:hover {
+.techs:hover {
     color: #08FDD8;
 }

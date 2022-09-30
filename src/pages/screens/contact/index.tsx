@@ -41,12 +41,12 @@ function Contact() {
 
                         <textarea className="message" placeholder="Message" name="message"></textarea>
 
-                        <div className="box-button">
-                            <button type="submit" className="flat-button">
-                                <div className="flat-button-div">
-                                    <span className="fill"></span>
-                                    <span className="base"></span>
-                                    <span className="text">SEND</span>
+                        <div className="box-button-contact">
+                            <button type="submit" className="flat-button-contact">
+                                <div className="flat-button-div-contact">
+                                    <span className="fill-contact"></span>
+                                    <span className="base-contact"></span>
+                                    <span className="text-contact">SEND</span>
                                 </div>
                             </button>
                         </div>

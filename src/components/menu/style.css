@@ -12,24 +12,23 @@
     z-index: 100000;
 }
 
-.header.sticky {
+.sticky {
     padding: 15px 100px;
     background: #fafafa;
 }
 
-.header .list {
+.list {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.header .list .item {
+.item {
     position: relative;
     list-style: none;
 }
 
-.header .list .item .button-menu {
+.button-menu {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
@@ -41,7 +40,7 @@
     cursor: pointer;
 }
 
-.header .list .item .button-menu::after {
+.button-menu::after {
     content: "";
     position: absolute;
     background-color: #08FDD8;
@@ -52,16 +51,16 @@
     transition: 0.5s;
 }
 
-.header .list .item .button-menu:hover {
+.button-menu:hover {
     transition: 0.5s;
     color: #08FDD8;
 }
 
-.header .list .item .button-menu:hover::after {
+.button-menu:hover::after {
     width: 100%;
 }
 
-.header .menu-language .language {
+.language {
     font-size: 1.1rem;
     letter-spacing: 2px;
     font-weight: 500px;

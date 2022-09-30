@@ -49,7 +49,7 @@
     margin-bottom: 1rem;
 }
 
-.flat-button div {
+.flat-button-div {
     width: 100%;
     height: 100%;
     position: relative;
@@ -57,7 +57,7 @@
     
 }
 
-.flat-button span.fill {
+.fill {
     background: #08FDD8;
     width: 0;
     height: 100%;
@@ -67,7 +67,7 @@
     transform: skewX(-10deg);
 }
 
-.flat-button:hover span.fill {
+.fill:hover {
     width: 110%;
 }
 
@@ -80,7 +80,7 @@
     border: 2px solid #08FDD8;
 }
 
-.flat-button span.text {
+.text {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -88,7 +88,6 @@
     right: 0;
     top: 0;
 }
-
-.flat-button span.text:hover {
+.text:hover {
     color: #fafafa;
 }
