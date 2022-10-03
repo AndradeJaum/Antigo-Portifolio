@@ -44,15 +44,12 @@
 }
 
 .skills-tech {
-    display: flex;
     position: relative;
-    padding: 20px 0;
-    width: 35%;
-    height: 40%;
     top: 33%;
     right: 10%;
+    width: 35%;
+    height: 40%;
     border-radius: 10px;
-    flex-wrap: wrap;
     border: 2px solid #08FDD8;
     background-color: #1d1d1d;
 }
@@ -75,22 +72,30 @@
     margin: auto;
 }
 
-.skills-list{
-    /* display: flex;
-    justify-content: space-around; */
+.skills-list-box{
+    display: flex;
+    justify-content: space-around;
+    height: 88%;
     width: 100%;
 }
 
-.list{
+.skills-list{
     width: 35%;
+    flex-direction: column;
     white-space: nowrap;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .skills-itens {
-    width: 40%;
     margin: 1rem 2rem 0 2rem;
 }
 
 .techs:hover {
+    color: #08FDD8;
+}
+
+.skills-link {
+    text-decoration: none;
     color: #08FDD8;
 }

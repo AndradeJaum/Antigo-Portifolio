@@ -11,13 +11,8 @@ function About() {
                         <h2 className="about-tittle">About</h2>
                         <div className="about-line"></div>
                     </div>
-                    <p className="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non mollitia vero quae itaque, et cumque sequi consequatur quam facilis dolorem sit, a sunt cum. Provident molestias blanditiis sit. Sunt, alias!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At quia maiores, ratione eius ut optio sunt veritatis praesentium? Repellendus esse laborum quos! Sit omnis quam ipsum reprehenderit aperiam natus asperiores?
-                    </p>
-                    <p className="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi corrupti! Excepturi dolore dolorem magnam quasi sequi ab veniam velit voluptate dolores exercitationem provident, odit temporibus odio aliquam pariatur ipsam.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit pariatur a nesciunt nam odit unde hic eos saepe quasi excepturi quidem porro iste, quis, odio fugiat magni laboriosam, autem voluptatibus.
-                    </p>
-
+                    <p className="about-text">Me chamo João Vitor, tenho 23 anos e estou estudando atualmente o último semestre de Análise e Desenvolvimento de Sistemas pela Universidade Norte do Paraná (Unopar). <br />
+                        <br />Comecei minha carreira atuando na área da usinagem como operador CNC, encerrei esse ciclo para me envolver com atividades onde utiliza-se minha criatividade como Designer Gráfico, onde conheci de perto o setor tech e me encantei pela área pela flexibilidade de trabalho. Sigo agora me aprofundando ainda mais neste vasto mundo aprendendo diversas tecnologias e almejando um cargo <strong>Junior</strong> como Full Stack Developer. </p>
                 </div>
                 <div className="about-image">
                 </div>
