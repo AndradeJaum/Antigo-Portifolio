@@ -18,13 +18,11 @@
 }
 
 .menu-list {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .menu-item {
-    position: relative;
     list-style: none;
 }
 

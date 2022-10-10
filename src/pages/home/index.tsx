@@ -13,22 +13,28 @@ function Home() {
 
     return (
         <>
-            <Menu />
-            <Apresentation />
-            <div id="about" >
-                <About />
+            <div>
+                <div>
+                <Menu />
+                    <Apresentation />
+                </div>
+                
+                <div id="about" >
+                    <About />
+                </div>
+                <div id="skills">
+                    <Skiils />
+                </div>
+                <div >
+                    <Work />
+                </div>
+                <div id="contact">
+                    <Contact />
+                </div>
+                <Arrow />
+                <Social />
             </div>
-            <div id="skills">
-                <Skiils />
-            </div>
-            <div >
-                <Work />
-            </div>
-            <div id="contact">
-                <Contact />
-            </div>
-            <Arrow />
-            <Social />
+
         </>
     )
 }

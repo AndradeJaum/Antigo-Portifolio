@@ -1,15 +1,27 @@
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(0%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(-20%);
+}
+
 .about {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .about-box {
-    position: relative;
-    top: 13%;
-    left: 15%;
     width: 35%;
     height: 60%;
+    margin: 10%;
     background-color: #1d1d1d;
     border-radius: 10px;
     border: 2px solid #08FDD8;
@@ -17,10 +29,7 @@
 
 .about-box-header {
     display: flex;
-    position: relative;
     padding: 15px;
-    top: 0;
-    left: 0;
     justify-content: center;
 }
 
@@ -43,9 +52,6 @@
 }
 
 .about-image {
-    position: relative;
-    top: 13%;
-    right: 15%;
     width: 34%;
     height: 50%;
 }
@@ -55,3 +61,9 @@
     height: 100%;
     margin: auto;
 } 
+
+@media screen and (min-width: 1280px ) {
+    .about-text {
+        color: #08FDD8;
+    }
+}

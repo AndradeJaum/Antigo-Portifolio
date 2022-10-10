@@ -1,19 +1,20 @@
 .contact {
     display: flex;
-    position: relative;
     justify-content: space-between;
     height: 100vh;
 }
 
+.contact-form {
+    width: 50%;
+}
+
 .contact-box {
-    width: 40%;
+    width: 75%;
     height: 55%;
-    position: relative;
-    top: 25%;
-    left: 10%;
     background-color: #1D1D1D;
     border: 2px solid #08FDD8;
     border-radius: 10px;
+    margin: 20% auto;
 }
 
 .contact-box-header {
@@ -135,13 +136,9 @@
     color: #fafafa;
 }
 
-
 .contact-map {
     display: flex;
-    position: relative;
-    top: 0;
-    right: 0;
-    width: 45%;
+    width: 50%;
     height: 100%;
     background-color: burlywood;
     text-align: center;
