@@ -21,7 +21,6 @@
  .work-tittle {
     font-size: 2rem;
     margin: auto;
-    white-space: nowrap;
 }
 
 .work-line {
@@ -29,10 +28,6 @@
     margin: auto 2rem auto 2rem;
     width: 100%;
     height: 1px;
-}
-
-.work-text {
-    margin: 1rem 2rem 1rem;
 }
 
 .card-box {
@@ -50,4 +45,39 @@
     text-align: center;
     color: black;
     cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+
+    .work {
+        height: 130vh;
+    }
+    
+     .work-box {
+        margin: auto;
+        height: 90%;
+        width: 70%;
+    }
+    
+    .work-box-header {
+        height: 8%;
+    }
+    
+     .work-tittle {
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    
+    .work-line {
+        margin: auto 1rem auto 1rem;
+    }
+    
+    .cards {
+        background-color: #fafafa;
+        width: 75%;
+        height: 13%;
+        margin: auto;
+ 
+    }
+
 }

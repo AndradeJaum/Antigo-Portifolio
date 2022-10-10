@@ -18,6 +18,7 @@
     display: flex;
     padding: 15px;
     justify-content: center;
+    text-align: center;
 }
 
 .skills-tittle {
@@ -28,7 +29,7 @@
 
 .skills-line {
     background-color: #fafafa;
-    margin: auto 2rem auto 2rem;
+    margin: auto 1rem ;
     width: 100%;
     height: 1px;
 }
@@ -48,7 +49,7 @@
 
 .skills-tech-header {
     display: flex;
-    height: 15%;
+    height: 20%;
 }
 
 .skills-subtittle{
@@ -83,3 +84,136 @@
     text-decoration: none;
     color: #08FDD8;
 }
+
+
+
+@media screen and (max-width: 414px) {
+
+    .skills {
+        height: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .skills-box {
+        width: 80%;
+        height: 50%;
+        margin-top: 10%;
+        padding: 0;
+        border-radius: 10px;
+        border: 2px solid #08FDD8;
+        background-color: #1d1d1d;
+    }
+    .skills-box-header {
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .skills-tittle {
+        font-size: 1.5rem;
+        margin: auto;
+        white-space: normal;
+    }
+    
+    .skills-line {
+        background-color: #fafafa;
+        margin: auto 1rem auto 1rem;
+    }
+    
+    .skills-text {
+        margin: 0rem 1rem ;
+        font-size: 0.75rem;
+    }
+
+    .skills-tech {
+        width: 70%;
+        height: 35%;
+        margin-top: 10%;
+    }
+
+    .skills-tech-header {
+        height: 20%;
+        text-align: center;
+    }
+
+    .skills-subtittle{
+        white-space: normal;
+        margin: auto;
+    }
+    
+    .skills-list-box{ 
+        height: 80%;
+        justify-content: space-around;
+    }
+    
+    .skills-list{
+        width: 40%;
+        white-space: nowrap;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .skills-itens {
+        margin: 1rem;
+    }
+
+    .techs {
+        font-size: 0.75rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    
+    .skills {
+        height: 110vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .skills {
+        height: 140vh;
+    }
+}
+
+@media screen and (min-width: 820px) {
+
+    .skills {
+        flex-wrap: wrap;
+        background-color: steelblue;
+    }
+
+    .skills-box {
+        width: 75%;
+        height: 45%;
+        padding: 15px;
+    }
+
+    .skills-tittle {
+        font-size: 2rem;
+        margin: auto;
+        white-space: normal;
+    }
+
+    .skills-tech {
+        width: 60%;
+        height: 30%;
+        margin-top: 10%;
+    }
+
+    .skills-subtittle{
+        white-space: nowrap;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    
+    .skills-list{
+        width: 40%;
+        white-space: nowrap;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+
+}
+
+

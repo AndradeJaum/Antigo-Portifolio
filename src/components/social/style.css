@@ -36,3 +36,12 @@
     height: 150px;
     margin: 0.5rem auto 0;
 }
+
+@media screen and (max-width: 820px) {
+
+    .social {
+        left: 3%;
+        top: 70%;
+    }
+
+}

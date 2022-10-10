@@ -26,7 +26,7 @@ function Skiils() {
                     </div>
                     <div className="skills-list-box">
                         <ul className="skills-list">
-                            <li className="skills-itens"><a className="techs">Javascript (ES6+)</a></li>
+                            <li className="skills-itens"><a className="techs">Javascript(ES6+)</a></li>
                             <li className="skills-itens"><a className="techs">React.js</a></li>
                             <li className="skills-itens"><a className="techs">Typescript</a></li>
                             <li className="skills-itens"><a className="techs">HTML5</a></li>

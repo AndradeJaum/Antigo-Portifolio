@@ -15,7 +15,7 @@ function Home() {
         <>
             <div>
                 <div>
-                <Menu />
+                {/* <Menu /> */}
                     <Apresentation />
                 </div>
                 
