@@ -1,13 +1,12 @@
 .work {
     height: 110vh;
     display: flex;
-    background-color: #08FDD8;
 }
 
  .work-box {
-    margin: 10% auto;
+    margin: 5% auto;
     width: 80%;
-    height: 85%;
+    height: 80%;
     border-radius: 10px;
     border: 2px solid #08FDD8;
     background-color: #1d1d1d;
@@ -51,7 +50,6 @@
 @media screen and (max-width: 540px) {
 
     .work{
-        background-color: teal;
         height: 130vh;
     }
 
