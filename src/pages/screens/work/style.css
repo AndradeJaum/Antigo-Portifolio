@@ -1,12 +1,13 @@
 .work {
-    height: 100vh;
+    height: 110vh;
     display: flex;
+    background-color: #08FDD8;
 }
 
  .work-box {
-    margin: auto;
+    margin: 10% auto;
     width: 80%;
-    height: 70%;
+    height: 85%;
     border-radius: 10px;
     border: 2px solid #08FDD8;
     background-color: #1d1d1d;
@@ -39,12 +40,44 @@
 
 .cards {
     background-color: #fafafa;
-    width: 26%;
-    height: 40%;
+    width: 40%;
+    height: 25%;
     margin: auto;
     text-align: center;
     color: black;
     cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+
+    .work{
+        background-color: teal;
+        height: 130vh;
+    }
+
+    .work-box {
+        margin: auto;
+        height: 90%;
+        width: 65%;
+    }
+    
+    .work-box-header {
+        height: 8%;
+    }
+    
+    .work-line {
+        margin: auto 1rem auto 1rem;
+    }
+    
+    .card-box {
+        height: 91%;
+    }
+
+    .cards {
+        background-color: #fafafa;
+        width: 70%;
+        height: 15%;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -53,7 +86,7 @@
         height: 130vh;
     }
     
-     .work-box {
+    .work-box {
         margin: auto;
         height: 90%;
         width: 70%;
@@ -77,7 +110,6 @@
         width: 75%;
         height: 13%;
         margin: auto;
- 
     }
 
 }

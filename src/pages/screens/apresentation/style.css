@@ -90,6 +90,40 @@
     color: #fafafa;
 }
 
+@media screen and (max-width: 820px) {
+
+    .slogan {
+        font-size: 1.5rem;
+    }
+
+    .flat-button {
+        max-width: 300px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .tittle-animation-loop {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .box-button {
+        width: 60%;
+        margin: 10% auto;
+    }
+
+    .flat-button {
+        max-width: 200px;
+    }
+
+    .slogan {
+        font-size: 1.1rem;
+    }
+}
+
 @media screen and (max-width: 414px) {
 
     .home-box {
@@ -113,20 +147,3 @@
     }
 }
 
-@media screen and (min-width: 820px) {
-
-    .box-button {
-        height: 15%;
-        margin: 10% auto;
-    }
-
-    .slogan {
-        font-size: 1.5rem;
-    }
-
-    .flat-button {
-        max-width: 300px;
-        height: 60px;
-        line-height: 60px;
-    }
-}

@@ -85,6 +85,109 @@
     color: #08FDD8;
 }
 
+@media screen and (max-width: 820px) {
+
+    .skills {
+        flex-wrap: wrap;
+    }
+
+    .skills-box {
+        width: 75%;
+        height: 45%;
+        padding: 15px;
+    }
+
+    .skills-tittle {
+        font-size: 2rem;
+        margin: auto;
+        white-space: normal;
+    }
+
+    .skills-tech {
+        width: 60%;
+        height: 30%;
+        margin-top: 10%;
+    }
+
+    .skills-subtittle{
+        white-space: nowrap;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    
+    .skills-list{
+        width: 40%;
+        white-space: nowrap;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .skills-box {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+.skills {
+    flex-wrap: wrap;
+    height: 130vh;
+}
+
+.skills-box {
+    width: 80%;
+    height: 42%;
+    padding: 0;
+    margin-top: 5%;
+}
+
+.skills-tittle {
+    margin: auto;
+    white-space: normal;
+}
+
+.skills-text {
+    margin: 0rem 1rem ;
+    font-size: 0.75rem;
+}
+
+.skills-tech {
+    width: 70%;
+    height: 30%;
+    margin-top: 0;
+}
+
+.skills-tech-header {
+    height: 25%;
+    text-align: center;
+}
+
+.skills-subtittle{
+    white-space: normal;
+    margin: auto;
+}
+
+.skills-list-box{ 
+    height: 80%;
+    justify-content: space-around;
+}
+
+.skills-list{
+    width: 40%;
+    margin-top: 0;
+}
+
+.skills-itens {
+    margin: 0.5rem 2rem;
+}
+
+.techs {
+    font-size: 0.75rem;
+}
+}
 
 
 @media screen and (max-width: 414px) {
@@ -175,45 +278,6 @@
     }
 }
 
-@media screen and (min-width: 820px) {
 
-    .skills {
-        flex-wrap: wrap;
-        background-color: steelblue;
-    }
-
-    .skills-box {
-        width: 75%;
-        height: 45%;
-        padding: 15px;
-    }
-
-    .skills-tittle {
-        font-size: 2rem;
-        margin: auto;
-        white-space: normal;
-    }
-
-    .skills-tech {
-        width: 60%;
-        height: 30%;
-        margin-top: 10%;
-    }
-
-    .skills-subtittle{
-        white-space: nowrap;
-        font-size: 1.5rem;
-        margin: auto;
-    }
-    
-    .skills-list{
-        width: 40%;
-        white-space: nowrap;
-        text-align: center;
-        margin-top: 0;
-    }
-    
-
-}
 
 
