@@ -1,7 +1,7 @@
 .social {
     position: fixed;
-    left: 2%;
-    top: 63%;
+    left: 1%;
+    bottom: 0%;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -37,11 +37,4 @@
     margin: 0.5rem auto 0;
 }
 
-@media screen and (max-width: 820px) {
 
-    .social {
-        left: 3%;
-        top: 70%;
-    }
-
-}

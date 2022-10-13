@@ -1,11 +1,18 @@
 .contact {
     display: flex;
-    justify-content: space-between;
     height: 100vh;
 }
 
 .contact-form {
     width: 50%;
+}
+
+.contact-map {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .contact-box {
@@ -14,7 +21,19 @@
     background-color: #1D1D1D;
     border: 2px solid #08FDD8;
     border-radius: 10px;
-    margin: 20% auto;
+    margin: 30% auto;
+}
+
+.testando {
+}
+
+.map-header {
+    height: 20%;
+}
+
+.map-box {
+    width: 100%;
+    height: 90%;
 }
 
 .contact-box-header {
@@ -136,15 +155,6 @@
     color: #fafafa;
 }
 
-.contact-map {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    background-color: burlywood;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-}
 
 @media screen and (max-width: 1280px) {
 
@@ -187,6 +197,10 @@
         height: 100vh;
     }
 
+    .contact-box {
+        margin-top: 5%;
+    }
+
     .contact-form {
         width: 100%;
         height: 50%;
@@ -195,6 +209,14 @@
     .contact-map {
         width: 100%;
         height: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-box {
+        height: 80%;
+        margin-top: 5%;
     }
 }
 

@@ -280,7 +280,6 @@
     .skills {
         height: 140vh;
         flex-wrap: wrap;
-        background-color: #08FDD8;
     }
 
     .skills-box {
@@ -354,7 +353,7 @@
     }   
     
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 393px) {
     
     .skills {
         height: 140vh;

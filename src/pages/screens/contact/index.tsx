@@ -1,6 +1,7 @@
 import "./style.css"
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import MyComponent from "../../../components/maps";
 
 function Contact() {
 
@@ -55,7 +56,12 @@ function Contact() {
                     </div>
                 </div>
                 <div className="contact-map">
-                    <h1>Map</h1>
+                    {/* <div className="map-header">
+                        <h3 className="testando">Localization</h3>
+                    </div> */}
+                    <div className="map-box">
+                        <MyComponent />
+                    </div>
                 </div>
             </div>
 
