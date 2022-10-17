@@ -41,7 +41,6 @@ function Skiils() {
                             <li className="skills-itens"><a className="techs">Node.js</a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </>

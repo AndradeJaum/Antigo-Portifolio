@@ -24,16 +24,20 @@
     margin: 30% auto;
 }
 
-.testando {
-}
-
 .map-header {
     height: 20%;
 }
 
 .map-box {
     width: 100%;
-    height: 90%;
+    height: 95%;
+}
+
+.map-marker {
+    background-color: #08FDD8 ;
+    padding: 5px;
+    margin-top: -45px;
+    font-weight: 700;
 }
 
 .contact-box-header {

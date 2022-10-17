@@ -1,7 +1,7 @@
 .box-arrow {
     position: fixed;
-    left: 95%;
-    top: 90%;
+    right: 2%;
+    bottom: 10%;
     text-align: center;
     display: flex;
     animation: is-bouncing 1s ease-in-out alternate infinite;

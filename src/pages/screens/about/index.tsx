@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import "./style.css"
-// import img from "../../images/me.png"
 
 function About() {
 

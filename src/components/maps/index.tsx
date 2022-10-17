@@ -1,46 +1,38 @@
-import React from 'react'
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import React, { useEffect } from 'react'
+import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',
   height: '100%'
 };
 
-const center = {
-  lat: -3.745,
-  lng: -38.523
+const position = {
+  lat: -26.294746,
+  lng: -48.846846
 };
 
-function MyComponent() {
+function MapComponent() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyCC-r42TU-VaDWlhG9WfNc7ph-7fC6Higk"
+    googleMapsApiKey: process.env.REACT_APP_MAPS_API_KEY as string
   })
 
-  const [map, setMap] = React.useState(null)
-
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
-
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
-
   return isLoaded ? (
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
-      </GoogleMap>
+
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={position}
+      zoom={15}
+    >
+      <Marker position={position} options={{
+        label: {
+          text: "Hometown",
+          className: "map-marker"
+        }
+      }} />
+
+    </GoogleMap>
   ) : <></>
 }
 
-export default React.memo(MyComponent)
+export default React.memo(MapComponent)
