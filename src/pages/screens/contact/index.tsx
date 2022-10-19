@@ -90,15 +90,7 @@ function Contact() {
 
                             <textarea className="message" placeholder="Message" name="message" onChange={valueInput} value={user.message} required></textarea>
 
-                            <div className="box-button-contact">
-                                <a type="submit" className="flat-button-contact">
-                                    <div className="flat-button-div-contact">
-                                        <span className="fill-contact"></span>
-                                        <span className="base-contact"></span>
-                                        <span className="text-contact">SEND</span>
-                                    </div>
-                                </a>
-                            </div>
+                            <button type="submit" className="btn-contact">SEND</button>
                         </form>
                     </div>
                 </div>

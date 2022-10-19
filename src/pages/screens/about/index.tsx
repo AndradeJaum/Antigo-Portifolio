@@ -3,25 +3,25 @@ import "./style.css"
 
 function About() {
 
-    function aboutScroll() {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                console.log(entry)
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                } else {
-                    entry.target.classList.remove("show");
-                }
-            })
-        })
+    // function aboutScroll() {
+    //     const observer = new IntersectionObserver((entries) => {
+    //         entries.forEach((entry) => {
+    //             console.log(entry)
+    //             if (entry.isIntersecting) {
+    //                 entry.target.classList.add("show");
+    //             } else {
+    //                 entry.target.classList.remove("show");
+    //             }
+    //         })
+    //     })
 
-        const hiddenElements = document.querySelectorAll(".hidden");
-        hiddenElements.forEach((el) => observer.observe(el))
-    }
+    //     const hiddenElements = document.querySelectorAll(".hidden");
+    //     hiddenElements.forEach((el) => observer.observe(el))
+    // }
 
-    useEffect(() => {
-        aboutScroll()
-    },[])
+    // useEffect(() => {
+    //     aboutScroll()
+    // },[])
 
     return (
         <>
@@ -37,7 +37,7 @@ function About() {
                             <br />Comecei minha carreira atuando na área da usinagem como operador CNC, encerrei esse ciclo para me envolver com atividades onde utiliza-se minha criatividade como Designer Gráfico, onde conheci de perto o setor tech e me encantei pela área pela flexibilidade de trabalho. Sigo agora me aprofundando ainda mais neste vasto mundo aprendendo diversas tecnologias e almejando um cargo <strong>Junior</strong> como Full Stack Developer. </p>
                     </div>
                     <div className="about-image">
-                        image
+                        
                     </div>
                 {/* </section> */}
             </div>
