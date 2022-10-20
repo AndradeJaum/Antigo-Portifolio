@@ -7,6 +7,7 @@ import { ISourceOptions } from "tsparticles-engine";
 import './App.css';
 import Home from "./pages/home";
 
+
 function App() {
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine);

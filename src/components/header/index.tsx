@@ -4,7 +4,7 @@ let Link = Scroll.Link
 let Element = Scroll.Element;
 
 
-function Menu() {
+function Header() {
 
     window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
@@ -50,4 +50,4 @@ function Menu() {
     )
 }
 
-export default Menu;
+export default Header;

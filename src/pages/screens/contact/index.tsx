@@ -67,7 +67,6 @@ function Contact() {
         <>
             <div className="contact">
                 <div className="contact-form">
-
                     {visible && (
                         status.type === "success" ? <p className="status-message success"> {status.message}</p> : 
                         status.type === "error" ? <p className="status-message error"> {status.message}</p> : ""

@@ -1,32 +1,12 @@
 import { useEffect } from "react";
+import HeaderModal from "../../../components/headerModal";
 import "./style.css"
 
 function About() {
 
-    // function aboutScroll() {
-    //     const observer = new IntersectionObserver((entries) => {
-    //         entries.forEach((entry) => {
-    //             console.log(entry)
-    //             if (entry.isIntersecting) {
-    //                 entry.target.classList.add("show");
-    //             } else {
-    //                 entry.target.classList.remove("show");
-    //             }
-    //         })
-    //     })
-
-    //     const hiddenElements = document.querySelectorAll(".hidden");
-    //     hiddenElements.forEach((el) => observer.observe(el))
-    // }
-
-    // useEffect(() => {
-    //     aboutScroll()
-    // },[])
-
     return (
         <>
             <div className="about">
-                {/* <section className="hidden"> */}
                     <div className="about-box">
                         <div className="about-box-header">
                             <div className="about-line"></div>
@@ -37,9 +17,7 @@ function About() {
                             <br />Comecei minha carreira atuando na área da usinagem como operador CNC, encerrei esse ciclo para me envolver com atividades onde utiliza-se minha criatividade como Designer Gráfico, onde conheci de perto o setor tech e me encantei pela área pela flexibilidade de trabalho. Sigo agora me aprofundando ainda mais neste vasto mundo aprendendo diversas tecnologias e almejando um cargo <strong>Junior</strong> como Full Stack Developer. </p>
                     </div>
                     <div className="about-image">
-                        
                     </div>
-                {/* </section> */}
             </div>
         </>
     )

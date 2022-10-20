@@ -1,6 +1,7 @@
 import "./style.css"
 import TypewriterComponent from "typewriter-effect";
 import * as Scroll from 'react-scroll';
+import ButtonContact from "../../../components/button";
 let Link = Scroll.Link
 let Element = Scroll.Element;
 
@@ -54,9 +55,7 @@ function Apresentation() {
                 <div className="box-slogan">
                     <p className="slogan">Let’s make something special.</p>
                     <Link className="anchors" to="contact" spy={true} smooth={true} duration={500}>
-                        <li className="slogan-item">
-                            <a className="slogan-btn" >Say Hello</a>
-                        </li>
+                        <ButtonContact />
                     </Link>
                 </div>
             </div>

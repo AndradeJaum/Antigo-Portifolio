@@ -1,5 +1,4 @@
 import "./style.css"
-import Menu from "../../components/menu";
 import Apresentation from "../screens/apresentation";
 import About from "../screens/about";
 import Skiils from "../screens/skills";
@@ -7,18 +6,19 @@ import Contact from "../screens/contact";
 import Arrow from "../../components/arrow";
 import Social from "../../components/social";
 import Work from "../screens/work";
+import Header from "../../components/header";
+import HeaderModal from "../../components/headerModal";
 
 function Home() {
-
 
     return (
         <>
             <div>
                 <div>
-                <Menu />
+                {/* <Header /> */}
+                    <HeaderModal/>
                     <Apresentation />
                 </div>
-                
                 <div id="about" >
                     <About />
                 </div>
