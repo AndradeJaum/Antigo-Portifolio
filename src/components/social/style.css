@@ -1,11 +1,7 @@
 .social {
-    position: fixed;
-    left: 1%;
-    bottom: 0%;
     display: flex;
     text-align: center;
     flex-direction: column;
-    display: flex;
     color: #08FDD8;
     width: 50px;
 }

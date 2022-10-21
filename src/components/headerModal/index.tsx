@@ -1,61 +1,49 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps, useState } from 'react';
+import Social from "../social";
 import "./style.css"
-import * as Scroll from 'react-scroll';
-let Link = Scroll.Link
-let Element = Scroll.Element;
+import { Icon } from '@iconify/react';
 
+type Props = {
+  children: any,
+  onClose: any,
+  id: string
+}
 
-export function HeaderModal() {
+export function HeaderModal({ id = "modal", onClose = () => { }, children }: Props) {
 
-  const [modalVisible, setModalVisible] = useState(false);
+  const handleOutsideClick = (e: { target: any; }) => {
+    if (e.target.id === id) onClose();
+  }
 
 
   return (
-    <div className='header-modal'>
-      <button className='open-modal' onClick={() => setModalVisible(true)}>|||</button>
+    <div id={id} className='modal' onClick={onClose}>
+      <div className='modal-box'>
+        <div className='content'>{children}</div>
+        <div className="social-modal">
 
-      {modalVisible ? <div id='modal' className='backdrop-modal'>
-        <div className='modal-box'>
-          <div className='box-itens-modal'>
-            <li className="modal-item" >
-              <Link className="modal-anchors" to="home" spy={true} smooth={true} duration={500}>
-                <a className="button-modal" >Home</a>
-              </Link>
-            </li>
+          <a href="https://github.com/AndradeJaum" target="_blank" className="box-icons-modal">
+            <Icon className="icons-modal" icon="simple-line-icons:social-github" width={18} height={18} />
+          </a>
 
-            <li className="modal-item">
-              <Link className="modal-anchors" to="about" spy={true} smooth={true} duration={500}>
-                <a className="button-modal" >About</a>
-              </Link>
-            </li>
+          <a href="https://www.linkedin.com/in/joao-vitorandrade/" target="_blank" className="box-icons-modal">
+            <Icon className="icons-modal" icon="simple-line-icons:social-linkedin" width={18} height={18} />
+          </a>
 
-            <li className="modal-item">
-              <Link className="modal-anchors" to="skills" spy={true} smooth={true} duration={500}>
-                <a className="button-modal" >Skills</a>
-              </Link>
-            </li>
+          <a href="https://www.instagram.com/andrade_jaum/" target="_blank" className="box-icons-modal">
+            <Icon className="icons-modal" icon="simple-line-icons:social-instagram" width={18} height={18} />
+          </a>
 
-            <li className="modal-item">
-              <Link className="modal-anchors" to="work" spy={true} smooth={true} duration={500}>
-                <a className="button-modal" >Work</a>
-              </Link>
-            </li>
-
-            <li className="modal-item">
-              <Link className="modal-anchors" to="contact" spy={true} smooth={true} duration={500}>
-                <a className="button-modal" >Contact</a>
-              </Link>
-            </li>
-          </div>
-
-          <div className='box-button-modal'>
-            <button className='close-modal' onClick={() => setModalVisible(false)}>Close</button>
-          </div>
-
+          <a href="https://open.spotify.com/user/4jsylrelyhxxzqb28vtyj19p4" target="_blank" className="box-icons-modal">
+            <Icon className="icons-modal" icon="simple-line-icons:social-spotify" width={18} height={18} />
+          </a>
+          
         </div>
-      </div> : null}
+        <div className='box-button-modal'>
+          <button className='close-modal' onClick={handleOutsideClick}>Close</button>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
 export default HeaderModal;

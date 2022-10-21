@@ -22,7 +22,7 @@ function MapComponent() {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={position}
-      zoom={15}
+      zoom={12}
     >
       <Marker position={position} options={{
         label: {

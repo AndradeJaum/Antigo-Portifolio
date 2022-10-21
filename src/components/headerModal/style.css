@@ -1,31 +1,5 @@
-.header-modal {
+.modal {
     width: 100%;
-}
-
-.open-modal {
-    color: #fafafa;
-    position: fixed;
-    right: 3%;
-    top: 1%;
-    width: 3%;
-    height: 6%;
-    border: none;
-    background: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    transform: rotate(90deg);
-}
-
-.open-modal:hover {
-    background-color: #fafafa15;
-}
-
-.backdrop-modal {
-    position: fixed;
-    z-index: 999;
-    height: 100%;
-    width: 100%;
-    background-color: #1d1d1dde;
     display: flex;
 }
 
@@ -41,13 +15,16 @@
     border-radius: 15px;
 }
 
-.box-itens-modal {
-    height: 80%;
+.content {
+    height: 65%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+
 .box-button-modal {
-    height: 10%;
+    height: 15%;
     width: 100%;
     display: flex;
 }
@@ -59,33 +36,30 @@
     font-weight: 600;
     color: #fafafa;
     width: 50%;
-    height: 100%;
+    height: 70%;
     margin: auto;
     border: 2px solid #08FDD8;
     border-radius: 15px 0;
 }
 
-.modal-item {
-    display: flex;
-    list-style: none;
-    background-color: #fafafa;
-    border-radius: 15px 0;
-    align-items: center;
-    margin: 1rem auto;
-    width: 56%;
-    height: 10%;
-}
-
-.modal-anchors {
+.social-modal {
+    width: 80%;
+    height: 15%;
     margin: auto;
+    display: flex;
+    align-items: center;
 }
 
-.button-modal {
-    text-decoration: none;
-    color: #1D1D1D;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    font-weight: 700px;
-    transition: 0.6s;
+.box-icons-modal {
+    color: #fafafa;
+    margin: 0.5rem auto;
     cursor: pointer;
+    width: 30px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+.box-icons-modal:hover {
+    color: #08FDD8;
+    translate: 0 -5px;
 }
