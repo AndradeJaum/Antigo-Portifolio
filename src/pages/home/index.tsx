@@ -7,86 +7,104 @@ import Arrow from "../../components/arrow";
 import Social from "../../components/social";
 import Work from "../screens/work";
 import HeaderModal from "../../components/headerModal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as Scroll from 'react-scroll';
 import Header from "../../components/header";
 let Link = Scroll.Link
 let Element = Scroll.Element;
 
-function Home() {
+function Home(props: any) {
 
-    const [buttonModalVisible, setButtonModalVisible] = useState(true);
-    const [modalVisible, setModalVisible] = useState(false);
+  const [windowMobile, setWindowMobile] = useState(window.innerWidth);
 
+  const [buttonModalVisible, setButtonModalVisible] = useState(true);
+  const [modalVisible, setModalVisible] = useState(false);
 
-    return (
-        <>
-            <div>
+  const updateWidth = () => {
+    setWindowMobile(window.innerWidth)
+  }
 
-                {buttonModalVisible ? (
-                    <button className='open-modal' onClick={() => setModalVisible(true)}>|||</button>
-                ) : null}
+  useEffect(() => {
+    window.addEventListener("resize", updateWidth)
+    if(windowMobile > 540) {
+      setButtonModalVisible(false)
+    } else {
+      setButtonModalVisible(true)
+    }
+    return(() => {
+      window.removeEventListener("resize", updateWidth)
+    })
+    
+  }, [windowMobile])
 
-                {modalVisible ? (
-                    <div id='modal' className='backdrop-modal'>
-                        <HeaderModal onClose={() => setModalVisible(false)} id={"modal"} >
-                            <li className="modal-item" >
-                                <Link className="modal-anchors" to="home" spy={true} smooth={true} duration={500}>
-                                    <a className="button-modal" >Home</a>
-                                </Link>
-                            </li>
+  return (
+    <>
+      <div>
 
-                            <li className="modal-item">
-                                <Link className="modal-anchors" to="about" spy={true} smooth={true} duration={500}>
-                                    <a className="button-modal" >About</a>
-                                </Link>
-                            </li>
+        {buttonModalVisible ? (
+          <button className='open-modal' onClick={() => setModalVisible(true)}>|||</button>
+        ) : null}
 
-                            <li className="modal-item">
-                                <Link className="modal-anchors" to="skills" spy={true} smooth={true} duration={500}>
-                                    <a className="button-modal" >Skills</a>
-                                </Link>
-                            </li>
+        {modalVisible ? (
+          <div id='modal' className='backdrop-modal'>
+            <HeaderModal onClose={() => setModalVisible(false)} id={"modal"} >
+              <li className="modal-item" >
+                <Link className="modal-anchors" to="home" spy={true} smooth={true} duration={500}>
+                  <a className="button-modal" >Home</a>
+                </Link>
+              </li>
 
-                            <li className="modal-item">
-                                <Link className="modal-anchors" to="work" spy={true} smooth={true} duration={500}>
-                                    <a className="button-modal" >Work</a>
-                                </Link>
-                            </li>
+              <li className="modal-item">
+                <Link className="modal-anchors" to="about" spy={true} smooth={true} duration={500}>
+                  <a className="button-modal" >About</a>
+                </Link>
+              </li>
 
-                            <li className="modal-item">
-                                <Link className="modal-anchors" to="contact" spy={true} smooth={true} duration={500}>
-                                    <a className="button-modal" >Contact</a>
-                                </Link>
-                            </li>
-                        </HeaderModal>
+              <li className="modal-item">
+                <Link className="modal-anchors" to="skills" spy={true} smooth={true} duration={500}>
+                  <a className="button-modal" >Skills</a>
+                </Link>
+              </li>
 
-                    </div>
-                ) : null}
-                <div>
-                    {/* <Header /> */}
-                    <Apresentation />
-                </div>
-                <div id="about" >
-                    <About />
-                </div>
-                <div id="skills">
-                    <Skiils />
-                </div>
-                <div >
-                    <Work />
-                </div>
-                <div id="contact">
-                    <Contact />
-                </div>
-                <Arrow />
-                <div className="box-social">
-                    <Social />
-                </div>
-            </div>
+              <li className="modal-item">
+                <Link className="modal-anchors" to="work" spy={true} smooth={true} duration={500}>
+                  <a className="button-modal" >Work</a>
+                </Link>
+              </li>
 
-        </>
-    )
+              <li className="modal-item">
+                <Link className="modal-anchors" to="contact" spy={true} smooth={true} duration={500}>
+                  <a className="button-modal" >Contact</a>
+                </Link>
+              </li>
+            </HeaderModal>
+
+          </div>
+        ) : null}
+        <div>
+          <Header />
+          <Apresentation />
+        </div>
+        <div id="about" >
+          <About />
+        </div>
+        <div id="skills">
+          <Skiils />
+        </div>
+        <div >
+          <Work />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+        <Arrow />
+        <div className="box-social">
+          <Social setRow={true} setBar={true} />
+        </div>
+      </div>
+
+    </>
+  )
 }
 
 export default Home;

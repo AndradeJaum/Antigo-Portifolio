@@ -1,10 +1,10 @@
 import "./style.css"
 import { Icon } from '@iconify/react';
 
-function Social() {
+function Social({ setRow = false, setBar = false }) {
     return (
         <>
-            <div className="social">
+            <div className={setRow ? "social" : "social-modal"}>
                 <a href="https://github.com/AndradeJaum" target="_blank" className="box-icons">
                     <Icon className="icons" icon="simple-line-icons:social-github" width={18} height={18} />
                 </a>
@@ -17,7 +17,7 @@ function Social() {
                 <a href="https://open.spotify.com/user/4jsylrelyhxxzqb28vtyj19p4" target="_blank" className="box-icons">
                     <Icon className="icons" icon="simple-line-icons:social-spotify" width={18} height={18} />
                 </a>
-                <div className="barra"></div>
+                <div className={setBar ? "bar" : "bar-invisible"}></div>
             </div>
         </>
     )

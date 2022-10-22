@@ -42,6 +42,10 @@
     border-radius: 15px 0;
 }
 
+.close-modal:hover {
+   background-color: #08fdd80e;
+}
+
 .social-modal {
     width: 80%;
     height: 15%;
@@ -63,3 +67,5 @@
     color: #08FDD8;
     translate: 0 -5px;
 }
+
+

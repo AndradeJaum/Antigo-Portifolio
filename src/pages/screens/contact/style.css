@@ -124,6 +124,7 @@
 
 .btn-contact:hover {
     background-color: #08FDD8;
+    /* #08fdd80e */
     color: #1D1D1D;
     font-weight: 700;
     border-radius: 0 20px;
