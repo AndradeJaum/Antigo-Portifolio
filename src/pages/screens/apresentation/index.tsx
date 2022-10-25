@@ -1,3 +1,4 @@
+import { i18next } from "../../../components/translate/i18n"
 import "./style.css"
 import TypewriterComponent from "typewriter-effect";
 import * as Scroll from 'react-scroll';
@@ -20,7 +21,9 @@ function Apresentation() {
                             }}
                             onInit={(typewriter) => {
                                 typewriter
-                                    .typeString("Hi There, <br /> I'm AndradeJaum")
+                                    .typeString(i18next.t("typing.hi"))
+                                    .typeString(", <br />")
+                                    .typeString(i18next.t("typing.name"))
                                     .start()
                             }}
                         />
@@ -36,15 +39,15 @@ function Apresentation() {
                             onInit={(typewriter) => {
                                 typewriter
                                     .pauseFor(3700)
-                                    .typeString(" Full Stack Developer")
+                                    .typeString(i18next.t("typing.office1"))
                                     .pauseFor(3500)
                                     .deleteChars(20)
                                     .pauseFor(1000)
-                                    .typeString("WordPress Freelancer")
+                                    .typeString(i18next.t("typing.office2"))
                                     .pauseFor(3500)
                                     .deleteChars(20)
                                     .pauseFor(1000)
-                                    .typeString("Web Designer")
+                                    .typeString(i18next.t("typing.office3"))
                                     .pauseFor(2000)
                                     .deleteChars(12)
                                     .start()
@@ -53,7 +56,7 @@ function Apresentation() {
                     </h1>
                 </div>
                 <div className="box-slogan">
-                    <p className="slogan">Let’s make something special.</p>
+                    <p className="slogan">{i18next.t("messages.slogan")}</p>
                     <Link className="anchors" to="contact" spy={true} smooth={true} duration={500}>
                         <ButtonContact />
                     </Link>

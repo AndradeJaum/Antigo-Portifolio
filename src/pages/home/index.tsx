@@ -1,3 +1,4 @@
+import { i18next } from "../../components/translate/i18n"
 import "./style.css"
 import Apresentation from "../screens/apresentation";
 import About from "../screens/about";
@@ -13,7 +14,7 @@ import Header from "../../components/header";
 let Link = Scroll.Link
 let Element = Scroll.Element;
 
-function Home(props: any) {
+function Home() {
 
   const [windowMobile, setWindowMobile] = useState(window.innerWidth);
 
@@ -26,15 +27,15 @@ function Home(props: any) {
 
   useEffect(() => {
     window.addEventListener("resize", updateWidth)
-    if(windowMobile > 540) {
+    if (windowMobile > 768) {
       setButtonModalVisible(false)
     } else {
       setButtonModalVisible(true)
     }
-    return(() => {
+    return (() => {
       window.removeEventListener("resize", updateWidth)
     })
-    
+
   }, [windowMobile])
 
   return (
@@ -50,31 +51,31 @@ function Home(props: any) {
             <HeaderModal onClose={() => setModalVisible(false)} id={"modal"} >
               <li className="modal-item" >
                 <Link className="modal-anchors" to="home" spy={true} smooth={true} duration={500}>
-                  <a className="button-modal" >Home</a>
+                  <a className="button-modal" >{i18next.t("buttons.home")}</a>
                 </Link>
               </li>
 
               <li className="modal-item">
                 <Link className="modal-anchors" to="about" spy={true} smooth={true} duration={500}>
-                  <a className="button-modal" >About</a>
+                  <a className="button-modal" >{i18next.t("buttons.about")}</a>
                 </Link>
               </li>
 
               <li className="modal-item">
                 <Link className="modal-anchors" to="skills" spy={true} smooth={true} duration={500}>
-                  <a className="button-modal" >Skills</a>
+                  <a className="button-modal" >{i18next.t("buttons.skills")}</a>
                 </Link>
               </li>
 
               <li className="modal-item">
                 <Link className="modal-anchors" to="work" spy={true} smooth={true} duration={500}>
-                  <a className="button-modal" >Work</a>
+                  <a className="button-modal" >{i18next.t("buttons.works")}</a>
                 </Link>
               </li>
 
               <li className="modal-item">
                 <Link className="modal-anchors" to="contact" spy={true} smooth={true} duration={500}>
-                  <a className="button-modal" >Contact</a>
+                  <a className="button-modal" >{i18next.t("buttons.contact")}</a>
                 </Link>
               </li>
             </HeaderModal>

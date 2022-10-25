@@ -1,3 +1,4 @@
+import {i18next} from "../../../components/translate/i18n"
 import "./style.css"
 
 function Work() {
@@ -7,7 +8,7 @@ function Work() {
                 <div className="work-box">
                     <div className="work-box-header">
                         <div className="work-line"></div>
-                        <h2 className="work-tittle">Works</h2>
+                        <h2 className="work-tittle">{i18next.t("tittles.works")}</h2>
                         <div className="work-line"></div>
                     </div>
                     <div className="card-box">

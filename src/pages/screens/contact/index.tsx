@@ -1,3 +1,4 @@
+import { i18next } from "../../../components/translate/i18n"
 import "./style.css"
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
@@ -57,39 +58,39 @@ function Contact() {
         setVisible(true)
         const timer = setTimeout(() => {
             setVisible(false)
-        }, 4000) 
+        }, 4000)
 
         return () => clearTimeout(timer);
 
-    },[status])
+    }, [status])
 
     return (
         <>
             <div className="contact">
                 <div className="contact-form">
                     {visible && (
-                        status.type === "success" ? <p className="status-message success"> {status.message}</p> : 
-                        status.type === "error" ? <p className="status-message error"> {status.message}</p> : ""
+                        status.type === "success" ? <p className="status-message success"> {status.message}</p> :
+                            status.type === "error" ? <p className="status-message error"> {status.message}</p> : ""
                     )}
-                    
+
                     <div className="contact-box">
                         <div className="contact-box-header">
                             <div className="contact-line"></div>
-                            <h2 className="contact-tittle">Contact</h2>
+                            <h2 className="contact-tittle">{i18next.t("tittles.contact")}</h2>
                             <div className="contact-line"></div>
                         </div>
                         <form onSubmit={handleSubmit} className="form" ref={form}>
-                            <input className="textField" type="text" placeholder="First Name" name="name" onChange={valueInput} value={user.name} required />
+                            <input className="textField" type="text" placeholder={i18next.t("form.name")} name="name" onChange={valueInput} value={user.name} required />
 
-                            <input className="textField" type="text" placeholder="Last Name" name="lastname" onChange={valueInput} value={user.lastname} required />
+                            <input className="textField" type="text" placeholder={i18next.t("form.lastname")} name="lastname" onChange={valueInput} value={user.lastname} required />
 
-                            <input className="textField" type="email" placeholder="email" name="email" onChange={valueInput} value={user.email} required />
+                            <input className="textField" type="email" placeholder={i18next.t("form.email")} name="email" onChange={valueInput} value={user.email} required />
 
-                            <input className="textField" type="tel" placeholder="Phone Number" name="phone" onChange={valueInput} value={user.phone} required />
+                            <input className="textField" type="tel" placeholder={i18next.t("form.phone")} name="phone" onChange={valueInput} value={user.phone} required />
 
-                            <textarea className="message" placeholder="Message" name="message" onChange={valueInput} value={user.message} required></textarea>
+                            <textarea className="message" placeholder={i18next.t("form.message")} name="message" onChange={valueInput} value={user.message} required></textarea>
 
-                            <button type="submit" className="btn-contact">SEND</button>
+                            <button type="submit" className="btn-contact">{i18next.t("buttons.send")}</button>
                         </form>
                     </div>
                 </div>

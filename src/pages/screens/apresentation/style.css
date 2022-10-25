@@ -32,6 +32,11 @@
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 1280px) {
+    .home-box {
+        width: 80%;
+    }
+}
 
 @media screen and (max-width: 1024px) {
 
