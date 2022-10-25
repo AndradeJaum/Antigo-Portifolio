@@ -1,7 +1,13 @@
-import {i18next} from "../../../components/translate/i18n"
+import { i18next } from "../../../components/translate/i18n"
 import "./style.css"
+import imgstatus from "../../../images/statusgg.png"
+import imgsearchmovie from "../../../images/searchmovie.png"
+import {} from "../../../components/translate/i18n"
 
 function Work() {
+
+    
+
     return (
         <>
             <div className="work">
@@ -12,12 +18,40 @@ function Work() {
                         <div className="work-line"></div>
                     </div>
                     <div className="card-box">
-                        <div className="cards">1</div>
-                        <div className="cards">2</div>
-                        <div className="cards">3</div>
-                        <div className="cards">4</div>
-                        <div className="cards">5</div>
-                        <div className="cards">6</div>
+                        <a href="http://statusgg.s3-website-us-east-1.amazonaws.com" target="_blank" className="cards">
+                            <img src={imgstatus} className="images" />
+                            <div className="works-hidden">
+                                <h2 className="works-names">{i18next.t("works.statusName")}</h2>
+                                <p className="works-text">
+                                {i18next.t("works.statusText")}
+                                </p>
+                            </div>
+                        </a>
+                        <a href="http://searchmovie.s3-website-us-east-1.amazonaws.com" target="_blank" className="cards">
+                            <img src={imgsearchmovie} className="images" />
+                            <div className="works-hidden">
+                                <h2 className="works-names">{i18next.t("works.searchName")}</h2>
+                                <p className="works-text">
+                                {i18next.t("works.searchText")}
+                                </p>
+                            </div>
+                        </a>
+                        <a className="cards">
+                        <div className="works-hidden">
+                                <h2 className="works-names">{i18next.t("works.comingsoon")}</h2>
+                                <p className="works-text">
+                                {i18next.t("works.comingsoonText")}
+                                </p>
+                            </div>
+                        </a>
+                        <a className="cards">
+                        <div className="works-hidden">
+                                <h2 className="works-names">{i18next.t("works.comingsoon")}</h2>
+                                <p className="works-text">
+                                {i18next.t("works.comingsoonText")}
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div >
             </div>

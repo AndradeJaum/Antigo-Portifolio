@@ -43,6 +43,14 @@ const messages = {
                 email: "email",
                 phone: "Telefone",
                 message: "Mensagem"
+            },
+            works: {
+                statusName: "Status GG",
+                statusText: "O Status GG consiste em um projeto que utiliza a API do jogo League of Legends para obter o Rank de cada jogador, quantidade de jogos, taxa de vitórias de cada modo de jogo e salvar em uma lista para criar um top 5 jogadores de cada modo. Com o Design limpo e intuitivo, proporcionando desde jogadores experientes à jogadores novatos a fazerem a busca.",
+                searchName:"Search Movie",
+                searchText:"Minha primeira aplicação com React JS utilizando uma API, neste caso foi a API do IMDB, com o intúito ser uma enciclopédia de filmes para receber informações sobre ele como nota, lançamento e sinopse.",
+                comingsoon: "EM BREVE",
+                comingsoonText: "Criando novos projetos"
             }
         }
     }
