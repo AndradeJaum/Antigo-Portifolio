@@ -22,16 +22,9 @@ function Header() {
   const handleSelectChange = (e: { target: any; }) => {
     setToggled(!toggled)
     i18next.changeLanguage(language)
-  }
-
-  function load() {
     window.location = window.location
-  }
 
-  useEffect(() => {
-    
-    
-  }, [toggled])
+  }
 
   window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
