@@ -54,7 +54,6 @@ function Header() {
             <label className="enbtn">en</label>
           </div>
           <ul className="menu-list" >
-
             <Link className="anchors" to="home" spy={true} smooth={true} duration={500}>
               <li className="menu-item">
                 <a className="button-menu" >{i18next.t("buttons.home")}</a>

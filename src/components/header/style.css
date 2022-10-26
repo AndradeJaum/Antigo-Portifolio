@@ -4,8 +4,7 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     transition: 0.6s;
     padding: 40px 100px;
     z-index: 100000;
@@ -16,14 +15,21 @@
     background: #fafafa;
 }
 
-.menu-list {
-    display: flex;
+.menu-language{
+    position: relative;
+    display: inline;
     justify-content: center;
-    align-items: center;
+    width: 10%;
+}
+
+.menu-list {
+    width: 80%;
+    display: flex;
 }
 
 .menu-item {
     list-style: none;
+    width: 26%;
 }
 
 .button-menu {
@@ -62,9 +68,6 @@
     color: black;
 }
 
-.menu-language {
-    display: flex;
-}
 
 input[type="checkbox"] {
     position: relative;
@@ -98,7 +101,7 @@ input[type="checkbox"]::before {
 }
 
 input:checked[type="checkbox"]::before {
-    left: 70%;
+    left: 72%;
 }
 
 .menu-language{
@@ -116,11 +119,9 @@ label {
 }
 
 .enbtn {
-    right: 6%;
-    bottom: 25%;
+    right: 5%;
 }
 
 .ptbtn {
     left: 9%;
-    bottom: 25%;
 }
