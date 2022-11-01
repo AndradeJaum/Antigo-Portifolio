@@ -3,7 +3,7 @@ const messages = {
         translations: {
             tittles: {
                 about: "Sobre",
-                skills: "Habilidades/Experiências",
+                skills: "Habilidades",
                 tech: "Tecnologias que Estudo",
                 works: "Trabalhos",
                 contact: "Contato"

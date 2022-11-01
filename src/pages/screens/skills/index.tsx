@@ -14,7 +14,6 @@ function Skiils() {
           <p className="skills-text">{i18next.t("messages.skiils1")}</p>
           <p className="skills-text">{i18next.t("messages.skills2")}<strong><a href="http://statusgg.s3-website-us-east-1.amazonaws.com" target="_blank" className="skills-link">Status.gg</a></strong>, {i18next.t("messages.skills3")} <strong><a href="https://github.com/AndradeJaum/STATUSGG-Back-End" target="_blank" className="skills-link">BackEnd</a></strong> {i18next.t("messages.skills4")} <strong><a href="https://github.com/AndradeJaum/STATUSGG-Front-End" target="_blank" className="skills-link">FrontEnd</a></strong> {i18next.t("messages.skills5")} </p>
         </div>
-
         <div className="skills-tech">
           <div className="skills-tech-header">
             <div className="skills-line"></div>
