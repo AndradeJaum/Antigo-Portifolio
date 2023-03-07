@@ -1,9 +1,7 @@
-import { i18next } from "../../../components/translate/i18n"
-import HeaderModal from "../../../components/headerModal";
-import "./style.css"
+import { i18next } from "../../../components/translate/i18n";
+import "./style.css";
 
 function About() {
-
   return (
     <>
       <div className="about">
@@ -13,14 +11,15 @@ function About() {
             <h2 className="about-tittle">{i18next.t("tittles.about")}</h2>
             <div className="about-line"></div>
           </div>
-          <p className="about-text">{i18next.t("messages.about1")} <br />
-            <br />{i18next.t("messages.about2")} </p>
-        </div>
-        <div className="about-image">
+          <p className="about-text">
+            {i18next.t("messages.about1")} <br />
+            <br />
+            {i18next.t("messages.about2")}{" "}
+          </p>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default About;
